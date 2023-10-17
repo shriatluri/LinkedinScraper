@@ -6,7 +6,7 @@ import tempfile
 
 
 # Set up your Google Custom Search Engine (CSE) and obtain an API key
-# Replace 'YOUR_API_KEY' and 'YOUR_CSE_ID' with your actual values
+# Add your custom API KEY and CSE ID down below
 
 API_KEY = ''
 CSE_ID = ''
@@ -24,7 +24,7 @@ def search_and_get_linkedin_profile(Name, Major, Year):
         response = requests.get(api_url)
         data = response.json()
         
-        # Extract the first LinkedIn URL from the search results (if available)
+        # Extract the first LinkedIn URL from the search results
         if 'items' in data and len(data['items']) > 0:
             linkedin_url = data['items'][0]['link']
         else:
