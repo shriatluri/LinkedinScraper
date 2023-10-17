@@ -1,2 +1,2 @@
 # LinkedinScraper
-Scrapers linkedin links from people in dataset
+Scrapers Linkedin links from people in the dataset. Made specifically for ENTR dataset 
